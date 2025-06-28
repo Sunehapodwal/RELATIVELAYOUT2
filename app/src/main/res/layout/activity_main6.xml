@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6"
+    android:background="@drawable/gradeint5">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Hello"
+        android:textColor="@color/white"
+        android:textSize="40dp"></TextView>
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in!"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/hello">
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="600dp"
+        android:layout_below="@+id/signin"
+        android:padding="24dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="12dp"
+        android:layout_marginTop="45dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gmail"
+                android:textSize="24sp"
+                android:textColor="#CE0909"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp">
+            </TextView>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="joydeo@gmail.com"
+                android:textSize="20dp"
+                android:layout_below="@+id/gmail"
+                android:layout_marginLeft="20dp">
+            </EditText>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="47dp"
+                app:srcCompat="@drawable/img_4"
+                android:layout_marginLeft="300dp"></ImageView>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="Password"
+                android:textColor="#cE0909"
+                android:textSize="24sp"></TextView>
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="....................."
+                android:textSize="20dp"
+                android:layout_below="@+id/password"
+                android:layout_marginLeft="20dp">
+            </EditText>
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="150dp"
+                app:srcCompat="@drawable/eye_password_hide_svgrepo_com"
+                android:layout_marginLeft="300dp"></ImageView>
+            <TextView
+                android:id="@+id/forgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot password?"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_below="@id/pass"
+                android:layout_marginLeft="150dp"></TextView>
+            <Button
+                android:id="@id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN "
+                android:layout_below="@id/forgotpass"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#680606"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"></Button>
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have account?"
+                android:layout_below="@id/signin"
+                android:layout_marginLeft="180dp"
+                android:textSize="20dp"
+                android:layout_marginTop="80dp">
+            </TextView>
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign up"
+                android:layout_below="@id/account"
+                android:layout_marginLeft="250dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                >
+            </TextView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

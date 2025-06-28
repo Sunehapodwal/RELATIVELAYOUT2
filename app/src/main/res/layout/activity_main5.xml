@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5"
+    android:background="@drawable/gradeint5">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_fitness_center_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/fit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FITNESS CLUB"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="160dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/welcomeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fit"
+        android:layout_marginTop="38dp"
+        android:text="Welcome Back"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <Button
+        android:id="@+id/btnSIGNIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#660033"
+        android:text="SIGN IN"
+        android:textSize="25dp"></Button>
+
+    <Button
+        android:id="@+id/btnSIGNUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSIGNIN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#ABFFFFFF"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="25dp"></Button>
+    <TextView
+        android:id="@+id/social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login With Social Media"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnSIGNUP"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"></TextView>
+
+</RelativeLayout>
+
+
